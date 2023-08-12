@@ -36,3 +36,103 @@
     .Container {
       max-width: 1140px;
     }
+
+ /* Cabeçalho */
+  header {
+    height: 120px;
+  }
+
+  #logo img {
+    width: 189px;
+    height: 189px;
+    margin-top: 30px;
+  }
+
+  label {
+    display: none;
+  }
+
+  nav ul {
+    position: static;
+    height: auto;
+    background-color: transparent;
+    margin-top: 40px;
+  }
+
+  nav ul li {
+    float: left;
+    border: 0;
+  }
+
+  nav ul li a {
+    color: #343538;
+  }
+
+  nav ul li a:hover {
+    color: #c00000;
+  }
+
+  /* Destaque */
+  main {
+    height: 70vh;
+  }
+
+  /* Sobre */
+  #sobre {
+    background-attachment: fixed;
+  }
+
+  #destaqueSobre {
+    display: inline;
+  }
+
+  #destaqueSobre img {
+    border-radius: 50%;
+    margin-right: 50px;
+  }
+
+  /* One page */
+  .Flex3 {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* Wireframe */
+  #wireframe {
+    background-attachment: fixed;
+  }
+
+  #wireframe span {
+    display: inline;
+  }
+
+  #qrcode {
+    display: inline;
+  }
+
+  #qrcode img {
+    width: 225px;
+    height: 225px;
+  }
+
+  /* Rodapé */
+  .Flex6 {
+    flex-direction: row-reverse;
+  }
+
+  address {
+    padding-top: 50px;
+  }
+
+  #iconeLocal {
+    display: inline;
+  }
+
+  #iconeMapa {
+    display: none;
+  }
+
+  #googleMaps {
+    display: inline;
+  }
+}
