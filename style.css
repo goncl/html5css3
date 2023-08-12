@@ -3,6 +3,36 @@
     @author Celso Gonçalves
 */
 
-body{
-    background-color: #ff0000;
-}
+ /* @media é usado para adaptar o conteudo ao tamanho da tela */
+
+/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 768px) {
+    /* Layout */
+    .Container {
+      max-width: 720px;
+    }
+  
+    /* Destaque */
+    main h1 {
+      font-size: 5.5em;
+    }
+  
+    main h2 {
+      font-size: 2em;
+    }
+  }
+  
+  /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  @media (min-width: 992px) {
+    /* Layout */
+    .Container {
+      max-width: 960px;
+    }
+  }
+  
+  /* PC >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+  @media (min-width: 1200px) {
+    /* Layout */
+    .Container {
+      max-width: 1140px;
+    }
