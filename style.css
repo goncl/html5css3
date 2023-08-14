@@ -3,6 +3,27 @@
     @author Celso Gonçalves
 */
 
+/* Importação (google fonts)*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* CSS RESET */
+*{
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+}
+
+/* Layout */
+.Container{
+  margin: 0 auto;  /* centraliza o conteudp da tela */
+  background-color: #ff7700;
+}
+
  /* @media é usado para adaptar o conteudo ao tamanho da tela */
 
 /* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
