@@ -24,9 +24,36 @@ body{
   margin: 0 auto;  
 }
 
-.Flex{
+.Flex {
   display: flex;
   justify-content: space-between;
+}
+
+.Flex2 {
+  display: flex;
+  align-items: center;
+}
+
+.Flex3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.Flex4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.Flex5 {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.Flex6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 /* Botão */
@@ -102,6 +129,7 @@ main{
   background: url(img/banner.jpg);
   /* background-size: cover adapta a largura da tela */
   background-size: cover;
+  background-position: center;
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -144,6 +172,35 @@ main h2 {
       font-size: 2em;
     }
   }
+
+  /* Sobre */
+#sobre {
+  padding: 50px 0px;
+  background: url(img/background.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#destaqueSobre {
+  display: none;
+}
+
+#textoSobre {
+  color: #fff;
+  padding: 0px 10px;
+}
+
+#textoSobre h2 {
+  margin-bottom: 10px;
+}
+
+.TopicosSobre {
+  margin-top: 20px;
+}
+
+.TopicosSobre img {
+  margin-right: 10px;
+}
   
   /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
   @media (min-width: 992px) {
@@ -198,6 +255,71 @@ main h2 {
 
   nav ul li a:hover{
     color: #c00000;
+  }
+
+   /* Destaque */
+   main {
+    height: 70vh;
+  }
+
+  /* Sobre */
+  #sobre {
+    /* deixa a imagem de background fixa na rolagem da pagina */
+    background-attachment: fixed;
+  }
+
+  #destaqueSobre {
+    display: inline;
+  }
+
+  #destaqueSobre img {
+    border-radius: 50%;
+    margin-right: 50px;
+  }
+
+  /* One page */
+  .Flex3 {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  /* Wireframe */
+  #wireframe {
+    background-attachment: fixed;
+  }
+
+  #wireframe span {
+    display: inline;
+  }
+
+  #qrcode {
+    display: inline;
+  }
+
+  #qrcode img {
+    width: 225px;
+    height: 225px;
+  }
+
+  /* Rodapé */
+  .Flex6 {
+    flex-direction: row-reverse;
+  }
+
+  address {
+    padding-top: 50px;
+  }
+
+  #iconeLocal {
+    display: inline;
+  }
+
+  #iconeMapa {
+    display: none;
+  }
+
+  #googleMaps {
+    display: inline;
   }
 
 }
