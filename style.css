@@ -20,8 +20,7 @@ body{
 
 /* Layout */
 .Container{
-  /* centraliza o conteudp da tela */
-  margin: 0 auto;  
+  margin: 0 auto;  /* centraliza o conteudp da tela */
 }
 
 .Flex {
@@ -73,6 +72,36 @@ body{
   position: fixed;
   right: 10px;
   bottom: 10px;
+}
+
+/* Cartões */
+.Card {
+  margin-top: 25px;
+  width: 338px;
+  height: 520px;
+  background-color: #e8e8e8;
+  border: 1px solid #a1a1a1;
+  border-radius: 25px;
+  text-align: center;
+}
+
+.Card img {
+  border-radius: 25px 25px 0px 0px;
+}
+
+.Card h3 {
+  margin-top: 15px;
+}
+
+.Card p {
+  text-align: left;
+  color: #434343;
+  padding: 10px 30px 50px 30px;
+}
+
+.Card a {
+  padding: 10px 100px;
+  border: 0;
 }
 
 /* Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
@@ -127,11 +156,9 @@ nav ul li a{
 /* Destaque */
 
 main{
-  /* 75vh ocupa 75% da altura da tela */
-  height: 75vh;
+  height: 75vh;  /* 75vh ocupa 75% da altura da tela */
   background: url(img/banner.jpg);
-  /* background-size: cover adapta a largura da tela */
-  background-size: cover;
+  background-size: cover;  /* background-size: cover adapta a largura da tela */
   background-position: center;
   color: #fff;
   display: flex;
@@ -149,34 +176,7 @@ main h2 {
   margin: 20px 0px 50px 0px;
 }
 
-/* @media é usado para adaptar o conteudo ao tamanho da tela */
-
-/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 576px) {
-  /* Layout */
-  .Container {
-    max-width: 540px;
-  }
-}
-
-/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
-@media (min-width: 768px) {
-    /* Layout */
-    .Container {
-      max-width: 720px;
-    }
-  
-    /* Destaque */
-    main h1 {
-      font-size: 5.5em;
-    }
-  
-    main h2 {
-      font-size: 2em;
-    }
-  }
-
-  /* Sobre */
+/* Sobre */
 #sobre {
   padding: 50px 0px;
   background: url(img/background.png);
@@ -204,10 +204,180 @@ main h2 {
 .TopicosSobre img {
   margin-right: 10px;
 }
+
+/* One page */
+#onepage {
+  padding: 50px 10px;
+}
+
+#onepage h2 {
+  margin-bottom: 10px;
+}
+
+#onepage p {
+  margin-bottom: 25px;
+}
+
+#video iframe {
+  width: 340px;
+  height: 191px;
+  border: 0;
+}
+
+/* Wireframe */
+#wireframe {
+  padding: 50px 0px;
+  background: url(img/background.png);
+  background-size: cover;
+  background-position: center;
+}
+
+#textoWire {
+  color: #fff;
+  padding: 0px 10px;
+}
+
+#textoWire h2 {
+  margin-bottom: 10px;
+}
+
+#textoWire p {
+  margin-bottom: 40px;
+}
+
+#textoWire span {
+  display: none;
+}
+
+#qrcode {
+  display: none;
+}
+
+/* Conteúdo */
+#conteudo {
+  padding: 50px 0px;
+}
+
+#conteudo h2 {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+#todos {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#todos a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 700;
+  font-size: 1.25em;
+}
+
+/* Rodapé */
+address {
+  padding: 35px 10px 50px 10px;
+  background: url(img/background2.png);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+address a {
+  text-decoration: none;
+  color: #fff;
+}
+
+address img {
+  padding-top: 15px;
+}
+
+#iconeLocal {
+  display: none;
+}
+
+#dados {
+  margin: 30px 0px 15px 0px;
+}
+
+#googleMaps {
+  display: none;
+}
+
+footer {
+  padding: 50px 0px;
+  background-color: #343538;
+  font-size: 0.875em;
+  color: #fff;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#social {
+  margin-bottom: 25px;
+}
+
+/* @media é usado para adaptar o conteudo ao tamanho da tela */
+
+/* Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* Layout */
+@media (min-width: 576px) {
+  .Container {
+    max-width: 540px;
+  }
+
+  /* Destaque */
+  main h1,
+  main h2 {
+    text-shadow: #000 0.05em 0.05em 0.05em;
+  }
+
+  /* One page */
+  #video iframe {
+    width: 560px;
+    height: 315px;
+  }
+
+  /* Rodapé */
+  .Flex5 {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #social {
+    margin: 0;
+  }
+}
+
+/* Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+/* Layout */
+@media (min-width: 768px) {
+    .Container {
+      max-width: 720px;
+    }
+  
+    /* Destaque */
+    main h1 {
+      font-size: 5.5em;
+    }
+  
+    main h2 {
+      font-size: 2em;
+    }
+  }
   
   /* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+   /* Layout */
   @media (min-width: 992px) {
-    /* Layout */
     .Container {
       max-width: 960px;
     }
@@ -324,5 +494,4 @@ main h2 {
   #googleMaps {
     display: inline;
   }
-
 }
